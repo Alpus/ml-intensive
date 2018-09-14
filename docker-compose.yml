@@ -1,0 +1,10 @@
+version: '2.3'
+
+services:
+  lesson:
+    build: .
+    volumes:
+     - ./data:/workdir/data
+     - ./allyouneed:/workdir/allyouneed
+    ports:
+      - "8123:8123"
