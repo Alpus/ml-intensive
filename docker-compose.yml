@@ -6,5 +6,6 @@ services:
     volumes:
      - ./data:/workdir/data
      - ./allyouneed:/workdir/allyouneed
-    ports:
-      - "8123:8123"
+    network_mode: "host"
+    runtime: "nvidia"
+
